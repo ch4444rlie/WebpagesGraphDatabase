@@ -1,0 +1,3983 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 3.0.0.1-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:yca="http://www.yworks.com/xml/yfiles-compat-arrows/1.0" xmlns:ycns="http://www.yworks.com/xml/yfiles-compat-node-styles/1.0" xmlns:yjs2="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:template-styles="http://www.yworks.com/demos/template-node-style/3.0" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:Vue3jsNodeStyle="http://www.yworks.com/demos/yfiles-vue-node-style/3.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:yx="http://www.yworks.com/xml/yfiles-common/4.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/3.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<yx:FreeNodeLabelModelParameter x:Key="1" LayoutRatio="0.5,0.5" LabelRatio="0.5,0.5"/>
+			<yjs:Font x:Key="2" fontSize="12" lineSpacing="0.2"/>
+			<yjs:Arrow x:Key="3" fill="BLACK" type="NONE"/>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"1.10.5","origin":"yfiles-jupyter-graphs","theme":{"name":"light","version":"1.0.0"},"dataImporter":"unknown","layout":"layout-organic","config":{"p_scope":0,"p_preferredEdgeLength":40,"p_allowOverlappingNodes":false,"p_compactness":0.5,"p_qualityTimeRatio":0.6,"p_maximumDuration":30000,"p_deterministic":false,"p_cycleSubstructure":0,"p_chainSubstructure":0,"p_starSubstructure":0,"p_parallelSubstructure":0,"p_considerNodeLabels":false,"p_edgeLabeling":false}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Open source software: how to live long and go far - Speaker Deck]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="312" Y="566" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://speakerdeck.com/gaelvaroquaux/open-source-software-how-to-live-long-and-go-far","properties":{"type":"Link","label":"Open source software: how to live long and go far - Speaker Deck","category":"general tools"},"styles":{"color":"#15AFAC"},"label":"Open source software: how to live long and go far - Speaker Deck","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n1">
+			<data key="d0">1</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[A Personal Retrospective on Prophet | by Sean J. Taylor | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="944" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/@seanjtaylor/a-personal-retrospective-on-prophet-f223c2378985","properties":{"type":"Link","label":"A Personal Retrospective on Prophet | by Sean J. Taylor | Medium","category":"ai and legal systems"},"styles":{"color":"#15AFAC"},"label":"A Personal Retrospective on Prophet | by Sean J. Taylor | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n2">
+			<data key="d0">2</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[GitHub - jackboyla/GLiREL: Generalist and Lightweight Model for Relation Extraction (Extract any relationship types from text)]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="630" Y="602" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://github.com/jackboyla/GLiREL","properties":{"type":"Link","label":"GitHub - jackboyla/GLiREL: Generalist and Lightweight Model for Relation Extraction (Extract any relationship types from text)","category":"ai"},"styles":{"color":"#15AFAC"},"label":"GitHub - jackboyla/GLiREL: Generalist and Lightweight Model for Relation Extraction (Extract any relationship types from text)","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n3">
+			<data key="d0">3</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Pandas Should Go Extinct | Latency Conference]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="399" Y="706" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.latencyconf.io/sessions/pandas-should-go-extinct","properties":{"type":"Link","label":"Pandas Should Go Extinct | Latency Conference","category":"general tools"},"styles":{"color":"#15AFAC"},"label":"Pandas Should Go Extinct | Latency Conference","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n4">
+			<data key="d0">4</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Orbae" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="790" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://orbae.adastra.eco/","properties":{"type":"Link","label":"Orbae","category":"environmental sustainability"},"styles":{"color":"#15AFAC"},"label":"Orbae","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n5">
+			<data key="d0">5</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[
+		MapWeave - The Geospatial Visualization SDK that uncovers every connection	]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="652" Y="271" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://cambridge-intelligence.com/mapweave/","properties":{"type":"Link","label":"\n\t\tMapWeave - The Geospatial Visualization SDK that uncovers every connection\t","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"\n\t\tMapWeave - The Geospatial Visualization SDK that uncovers every connection\t","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n6">
+			<data key="d0">6</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[GitHub - yWorks/yfiles-jupyter-graphs-for-sparql: The open-source adapter for working with RDF databases and SPARQL queries in Jupyter notebooks leveraging the yFiles Graphs for Jupyter plugin.]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="106" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql","properties":{"type":"Link","label":"GitHub - yWorks/yfiles-jupyter-graphs-for-sparql: The open-source adapter for working with RDF databases and SPARQL queries in Jupyter notebooks leveraging the yFiles Graphs for Jupyter plugin.","category":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"GitHub - yWorks/yfiles-jupyter-graphs-for-sparql: The open-source adapter for working with RDF databases and SPARQL queries in Jupyter notebooks leveraging the yFiles Graphs for Jupyter plugin.","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n7">
+			<data key="d0">7</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Knowledge Graph(s) and LLM-based ontologies have a very good shot at unlocking GenAI in production | by EQT Ventures | eqtventures | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="0" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/eqtventures/knowledge-graph-s-and-llm-based-ontologies-have-a-very-good-shot-at-unlocking-genai-in-production-1b167533ef63","properties":{"type":"Link","label":"Knowledge Graph(s) and LLM-based ontologies have a very good shot at unlocking GenAI in production | by EQT Ventures | eqtventures | Medium","category":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"Knowledge Graph(s) and LLM-based ontologies have a very good shot at unlocking GenAI in production | by EQT Ventures | eqtventures | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n8">
+			<data key="d0">8</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Supercharge AI Data Management With Knowledge Graphs | MongoDB Blog]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="101" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.mongodb.com/blog/post/supercharge-ai-data-management-knowledge-graphs","properties":{"type":"Link","label":"Supercharge AI Data Management With Knowledge Graphs | MongoDB Blog","category":"ai and legal systems"},"styles":{"color":"#15AFAC"},"label":"Supercharge AI Data Management With Knowledge Graphs | MongoDB Blog","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n9">
+			<data key="d0">9</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[The Resource Description Framework (RDF) - Enterprise Knowledge]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="689" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://enterprise-knowledge.com/the-resource-description-framework-rdf/","properties":{"type":"Link","label":"The Resource Description Framework (RDF) - Enterprise Knowledge","category":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"The Resource Description Framework (RDF) - Enterprise Knowledge","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n10">
+			<data key="d0">10</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Validating Graph Data with SHACL Using Oracle RDF Graph Adapter for Eclipse RDF4J | by Matt Perry | Oracle Developers | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="202" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/oracledevs/validating-graph-data-with-shacl-using-oracle-rdf-graph-adapter-for-eclipse-rdf4j-09327042f530","properties":{"type":"Link","label":"Validating Graph Data with SHACL Using Oracle RDF Graph Adapter for Eclipse RDF4J | by Matt Perry | Oracle Developers | Medium","category":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"Validating Graph Data with SHACL Using Oracle RDF Graph Adapter for Eclipse RDF4J | by Matt Perry | Oracle Developers | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n11">
+			<data key="d0">11</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Fully In-Browser Graph RAG with Kuzu-Wasm]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="569" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://blog.kuzudb.com/post/kuzu-wasm-rag/","properties":{"type":"Link","label":"Fully In-Browser Graph RAG with Kuzu-Wasm","category":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"Fully In-Browser Graph RAG with Kuzu-Wasm","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n12">
+			<data key="d0">12</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Transforming unstructured data to a graph with BAML and Kuzu]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="29" Y="750" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://blog.kuzudb.com/post/unstructured-data-to-graph-baml-kuzu/","properties":{"type":"Link","label":"Transforming unstructured data to a graph with BAML and Kuzu","category":"healthcare data"},"styles":{"color":"#15AFAC"},"label":"Transforming unstructured data to a graph with BAML and Kuzu","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n13">
+			<data key="d0">13</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Building a Hybrid Vector Search Database with Arrow and DuckDB | by Thomas F McGeehan V | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="994" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/@mcgeehan/building-a-hybrid-vector-search-database-with-arrow-and-duckdb-07ebc049bc1f","properties":{"type":"Link","label":"Building a Hybrid Vector Search Database with Arrow and DuckDB | by Thomas F McGeehan V | Medium","category":"federated search"},"styles":{"color":"#15AFAC"},"label":"Building a Hybrid Vector Search Database with Arrow and DuckDB | by Thomas F McGeehan V | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n14">
+			<data key="d0">14</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Querying an ERP using an AI configuration in Graphileon | by Graphileon — Your path to graphs | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="303" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/@tomzeppenfeldt/querying-an-erp-using-an-ai-configuration-in-graphileon-c667f21f5b51","properties":{"type":"Link","label":"Querying an ERP using an AI configuration in Graphileon | by Graphileon — Your path to graphs | Medium","category":"ai and legal systems"},"styles":{"color":"#15AFAC"},"label":"Querying an ERP using an AI configuration in Graphileon | by Graphileon — Your path to graphs | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n15">
+			<data key="d0">15</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[All FHIR concepts can be explained simply – Darren Devitt]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="128" Y="598" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://darrendevitt.com/all-fhir-concepts-can-be-explained-simply/","properties":{"type":"Link","label":"All FHIR concepts can be explained simply – Darren Devitt","category":"healthcare data"},"styles":{"color":"#15AFAC"},"label":"All FHIR concepts can be explained simply – Darren Devitt","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n16">
+			<data key="d0">16</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[RAG on FHIR with Knowledge Graphs | by Sam Schifman | Medium]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="0" Y="571" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://medium.com/@samschifman/rag-on-fhir-with-knowledge-graphs-04d8e13ee96e","properties":{"type":"Link","label":"RAG on FHIR with Knowledge Graphs | by Sam Schifman | Medium","category":"healthcare data"},"styles":{"color":"#15AFAC"},"label":"RAG on FHIR with Knowledge Graphs | by Sam Schifman | Medium","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n17">
+			<data key="d0">17</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Home | Artificial Intelligence and Law
+        ]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="404" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://link.springer.com/journal/10506","properties":{"type":"Link","label":"Home | Artificial Intelligence and Law\n        ","category":"ai and legal systems"},"styles":{"color":"#15AFAC"},"label":"Home | Artificial Intelligence and Law\n        ","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n18">
+			<data key="d0">18</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Lessons from building a prototype single-search tool for beneficial ownership registers | openownership.org]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="362" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.openownership.org/en/blog/lessons-from-building-a-prototype-single-search-tool-for-beneficial-ownership-registers/","properties":{"type":"Link","label":"Lessons from building a prototype single-search tool for beneficial ownership registers | openownership.org","category":"federated search"},"styles":{"color":"#15AFAC"},"label":"Lessons from building a prototype single-search tool for beneficial ownership registers | openownership.org","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n19">
+			<data key="d0">19</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Billionaire Roman Abramovich’s Company Set Up Fake Superyacht Chartering Scheme in Apparent Attempt to Evade Millions in Taxes | OCCRP]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="158" Y="297" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.occrp.org/en/project/cyprus-confidential/billionaire-roman-abramovichs-company-set-up-fake-superyacht-chartering-scheme-in-apparent-attempt-to-evade-millions-in-taxes","properties":{"type":"Link","label":"Billionaire Roman Abramovich’s Company Set Up Fake Superyacht Chartering Scheme in Apparent Attempt to Evade Millions in Taxes | OCCRP","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"Billionaire Roman Abramovich’s Company Set Up Fake Superyacht Chartering Scheme in Apparent Attempt to Evade Millions in Taxes | OCCRP","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n20">
+			<data key="d0">20</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[‘The Contract Factory’: Inside Danske Bank Estonia’s Money Laundering Machine | OCCRP]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="239" Y="95" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.occrp.org/en/project/the-azerbaijani-laundromat/the-contract-factory-inside-danske-bank-estonias-money-laundering-machine","properties":{"type":"Link","label":"‘The Contract Factory’: Inside Danske Bank Estonia’s Money Laundering Machine | OCCRP","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"‘The Contract Factory’: Inside Danske Bank Estonia’s Money Laundering Machine | OCCRP","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n21">
+			<data key="d0">21</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="The Raw Data | OCCRP" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="808" Y="152" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.occrp.org/en/project/the-azerbaijani-laundromat/the-raw-data","properties":{"type":"Link","label":"The Raw Data | OCCRP","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"The Raw Data | OCCRP","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n22">
+			<data key="d0">22</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="OpenSanctions" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="154" Y="96" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://discuss.opensanctions.org/","properties":{"type":"Link","label":"OpenSanctions","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"OpenSanctions","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n23">
+			<data key="d0">23</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Getting started with the OpenCorporates API: A beginner’s guide – OpenCorporates]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="264" Y="259" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://blog.opencorporates.com/2025/02/13/getting-started-with-the-opencorporates-api/","properties":{"type":"Link","label":"Getting started with the OpenCorporates API: A beginner’s guide – OpenCorporates","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"Getting started with the OpenCorporates API: A beginner’s guide – OpenCorporates","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n24">
+			<data key="d0">24</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Study on Trafficking in Persons and Smuggling of Migrants in the Context of the Displacement caused by the War in Ukraine]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="606" Y="120" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.unodc.org/unodc/en/data-and-analysis/tip-studies.html","properties":{"type":"Link","label":"Study on Trafficking in Persons and Smuggling of Migrants in the Context of the Displacement caused by the War in Ukraine","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Study on Trafficking in Persons and Smuggling of Migrants in the Context of the Displacement caused by the War in Ukraine","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n25">
+			<data key="d0">25</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Scam Empire: inside the $275m fraud call-centre operations - Which?]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="677" Y="73" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.which.co.uk/news/article/scam-empire-inside-the-275m-fraud-call-centre-operations-aP3Kc4c9HWd7","properties":{"type":"Link","label":"Scam Empire: inside the $275m fraud call-centre operations - Which?","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Scam Empire: inside the $275m fraud call-centre operations - Which?","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n26">
+			<data key="d0">26</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Scam Operations Relied on Third-Party Marketing Companies for Steady Stream of Potential Victims | OCCRP]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="762" Y="80" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.occrp.org/en/project/scam-empire/scam-operations-relied-on-third-party-marketing-companies-for-steady-stream-of-potential-victims","properties":{"type":"Link","label":"Scam Operations Relied on Third-Party Marketing Companies for Steady Stream of Potential Victims | OCCRP","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Scam Operations Relied on Third-Party Marketing Companies for Steady Stream of Potential Victims | OCCRP","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n27">
+			<data key="d0">27</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[dad-cdm-tsc/DAD-CDM-Key-Findings-202502.md at main · DAD-CDM/dad-cdm-tsc · GitHub]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="489" Y="576" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://github.com/DAD-CDM/dad-cdm-tsc/blob/main/DAD-CDM-Key-Findings-202502.md","properties":{"type":"Link","label":"dad-cdm-tsc/DAD-CDM-Key-Findings-202502.md at main · DAD-CDM/dad-cdm-tsc · GitHub","category":"general tools"},"styles":{"color":"#15AFAC"},"label":"dad-cdm-tsc/DAD-CDM-Key-Findings-202502.md at main · DAD-CDM/dad-cdm-tsc · GitHub","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n28">
+			<data key="d0">28</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Using EITI data | EITI" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="890" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://eiti.org/using-eiti-data","properties":{"type":"Link","label":"Using EITI data | EITI","category":"federated search"},"styles":{"color":"#15AFAC"},"label":"Using EITI data | EITI","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n29">
+			<data key="d0">29</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[How AI is Transforming Beneficial Ownership Discovery]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="107" Y="162" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.moodys.com/web/en/us/kyc/resources/insights/how-ai-is-enhancing-ubo-discovery-and-support-reporting-requirements-globally.html","properties":{"type":"Link","label":"How AI is Transforming Beneficial Ownership Discovery","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"How AI is Transforming Beneficial Ownership Discovery","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n30">
+			<data key="d0">30</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[The ADIMA database on Multinational Enterprises]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="306" Y="146" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://oecdstatistics.blog/2019/07/04/the-adima-database-on-multinational-enterprises/","properties":{"type":"Link","label":"The ADIMA database on Multinational Enterprises","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"The ADIMA database on Multinational Enterprises","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n31">
+			<data key="d0">31</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[New U.S. Outbound Investment Rules Target China. How Can You Assess Risk? | Kharon  ]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="505" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.kharon.com/brief/outbound-investment-rules-china-hong-kong","properties":{"type":"Link","label":"New U.S. Outbound Investment Rules Target China. How Can You Assess Risk? | Kharon  ","category":"legal systems"},"styles":{"color":"#15AFAC"},"label":"New U.S. Outbound Investment Rules Target China. How Can You Assess Risk? | Kharon  ","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n32">
+			<data key="d0">32</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Illicit Finance: Treasury's Initial Safeguards for Allowing Access to Information on Corporate Ownership | U.S. GAO]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="92" Y="244" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.gao.gov/products/gao-25-107403","properties":{"type":"Link","label":"Illicit Finance: Treasury's Initial Safeguards for Allowing Access to Information on Corporate Ownership | U.S. GAO","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"Illicit Finance: Treasury's Initial Safeguards for Allowing Access to Information on Corporate Ownership | U.S. GAO","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n33">
+			<data key="d0">33</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Høringsdetaljer - Høringsportalen]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="606" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://hoeringsportalen.dk/Hearing/Details/69602","properties":{"type":"Link","label":"Høringsdetaljer - Høringsportalen","category":"legal systems"},"styles":{"color":"#15AFAC"},"label":"Høringsdetaljer - Høringsportalen","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n34">
+			<data key="d0">34</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Kunskaps­rapport – Avancerade angrepp mot välfärds­systemen - Utbetalningsmyndigheten]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="595" Y="205" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://ubm.se/publikationer/publikationer/2025-03-13-kunskapsrapport---avancerade-angrepp-mot-valfardssystemen","properties":{"type":"Link","label":"Kunskaps­rapport – Avancerade angrepp mot välfärds­systemen - Utbetalningsmyndigheten","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Kunskaps­rapport – Avancerade angrepp mot välfärds­systemen - Utbetalningsmyndigheten","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n35">
+			<data key="d0">35</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Daniel Silva of Prudential on Insurance Fraud Detection]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="330" Y="221" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://senzing.com/daniel-silva-prudential-senzing-global-user-conference/","properties":{"type":"Link","label":"Daniel Silva of Prudential on Insurance Fraud Detection","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"Daniel Silva of Prudential on Insurance Fraud Detection","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n36">
+			<data key="d0">36</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Streamlining Criminal Assets Confiscation | GraphAware]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="735" Y="287" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://graphaware.com/resources/streamlining-criminal-assets-confiscation/","properties":{"type":"Link","label":"Streamlining Criminal Assets Confiscation | GraphAware","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Streamlining Criminal Assets Confiscation | GraphAware","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n37">
+			<data key="d0">37</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Connected Data for Criminal Intelligence Analysis]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="801" Y="230" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://graphaware.com/law-enforcement/","properties":{"type":"Link","label":"Connected Data for Criminal Intelligence Analysis","category":"organized crime analysis"},"styles":{"color":"#15AFAC"},"label":"Connected Data for Criminal Intelligence Analysis","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n38">
+			<data key="d0">38</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[AML Investigations: Detecting High-Risk Transactions with Network Analytics]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="231" Y="325" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://graphaware.com/blog/aml-investigations-detecting-risk-transactions/","properties":{"type":"Link","label":"AML Investigations: Detecting High-Risk Transactions with Network Analytics","category":"financial crime technology"},"styles":{"color":"#15AFAC"},"label":"AML Investigations: Detecting High-Risk Transactions with Network Analytics","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n39">
+			<data key="d0">39</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Just a moment..." LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="463" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5120765","properties":{"type":"Link","label":"Just a moment...","category":"corporate governance"},"styles":{"color":"#15AFAC"},"label":"Just a moment...","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n40">
+			<data key="d0">40</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Software, Hardware, Innovation All Needed to Upgrade the Power Grid]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="254" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.powermag.com/software-hardware-innovation-all-needed-to-upgrade-the-power-grid/","properties":{"type":"Link","label":"Software, Hardware, Innovation All Needed to Upgrade the Power Grid","category":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"Software, Hardware, Innovation All Needed to Upgrade the Power Grid","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n41">
+			<data key="d0">41</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[NEMDE nightmares - parallel pathways and clashing constraints - WattClarity]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="707" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://wattclarity.com.au/articles/2025/02/nemde-nightmares-parallel-pathways-and-clashing-constraints/","properties":{"type":"Link","label":"NEMDE nightmares - parallel pathways and clashing constraints - WattClarity","category":"federated search"},"styles":{"color":"#15AFAC"},"label":"NEMDE nightmares - parallel pathways and clashing constraints - WattClarity","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n42">
+			<data key="d0">42</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Australian coal plant in 'extraordinary' survival experiment as solar, funding woes stalk industry - ABC News]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="770" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.abc.net.au/news/2024-10-13/australian-coal-plant-in-extraordinary-survival-experiment/104461504","properties":{"type":"Link","label":"Australian coal plant in 'extraordinary' survival experiment as solar, funding woes stalk industry - ABC News","category":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"Australian coal plant in 'extraordinary' survival experiment as solar, funding woes stalk industry - ABC News","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n43">
+			<data key="d0">43</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Curtailment: When We Throw Away Clean Energy]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="808" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://blog.gridstatus.io/curtailment/","properties":{"type":"Link","label":"Curtailment: When We Throw Away Clean Energy","category":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"Curtailment: When We Throw Away Clean Energy","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n44">
+			<data key="d0">44</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[SPP Expansion Provides a Blueprint for the Future of the Grid]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="0" Y="851" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://blog.gridstatus.io/spp-expansion-west/","properties":{"type":"Link","label":"SPP Expansion Provides a Blueprint for the Future of the Grid","category":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"SPP Expansion Provides a Blueprint for the Future of the Grid","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n45">
+			<data key="d0">45</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Text><![CDATA[Short-Term Energy Outlook - U.S. Energy Information Administration (EIA)]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="909" Y="1046" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"https://www.eia.gov/outlooks/steo/","properties":{"type":"Link","label":"Short-Term Energy Outlook - U.S. Energy Information Administration (EIA)","category":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"Short-Term Energy Outlook - U.S. Energy Information Administration (EIA)","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+		</node>
+		<node id="n46">
+			<data key="d0">46</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="ai and legal systems" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="399" Y="610" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"general tools","properties":{"type":"Category","label":"ai and legal systems"},"styles":{"color":"#15AFAC"},"label":"ai and legal systems","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+		</node>
+		<node id="n47">
+			<data key="d0">47</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="environmental sustainability" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="590" Y="690" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"ai","properties":{"type":"Category","label":"environmental sustainability"},"styles":{"color":"#15AFAC"},"label":"environmental sustainability","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n48">
+			<data key="d0">48</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="graph technologies" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="704" Y="177" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"organized crime analysis","properties":{"type":"Category","label":"graph technologies"},"styles":{"color":"#15AFAC"},"label":"graph technologies","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+			<port name="p6"/>
+			<port name="p7"/>
+		</node>
+		<node id="n49">
+			<data key="d0">49</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="federated search" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="49" Y="655" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"healthcare data","properties":{"type":"Category","label":"federated search"},"styles":{"color":"#15AFAC"},"label":"federated search","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+		</node>
+		<node id="n50">
+			<data key="d0">50</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="legal systems" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="198" Y="202" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"financial crime technology","properties":{"type":"Category","label":"legal systems"},"styles":{"color":"#15AFAC"},"label":"legal systems","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+			<port name="p6"/>
+			<port name="p7"/>
+			<port name="p8"/>
+		</node>
+		<node id="n51">
+			<data key="d0">51</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="power and utilities" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="468" Y="944" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"corporate governance","properties":{"type":"Category","label":"power and utilities"},"styles":{"color":"#15AFAC"},"label":"power and utilities","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n52">
+			<data key="d0">52</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Prophet" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="229" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"open-source software","properties":{"type":"Keyword","label":"Prophet"},"styles":{"color":"#15AFAC"},"label":"Prophet","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n53">
+			<data key="d0">53</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="in-memory analytics" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="669" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"relation extraction","properties":{"type":"Keyword","label":"in-memory analytics"},"styles":{"color":"#15AFAC"},"label":"in-memory analytics","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n54">
+			<data key="d0">54</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="MapWeave" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="843" Y="941" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"land conversion","properties":{"type":"Keyword","label":"MapWeave"},"styles":{"color":"#15AFAC"},"label":"MapWeave","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n55">
+			<data key="d0">55</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="knowledge graph" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="110" Y="945" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"SparQL Graph Widget","properties":{"type":"Keyword","label":"knowledge graph"},"styles":{"color":"#15AFAC"},"label":"knowledge graph","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n56">
+			<data key="d0">56</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="SHACL validation" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="673" Y="943" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"RDF","properties":{"type":"Keyword","label":"SHACL validation"},"styles":{"color":"#15AFAC"},"label":"SHACL validation","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n57">
+			<data key="d0">57</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="clinical notes" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="572" Y="944" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"Graph RAG","properties":{"type":"Keyword","label":"clinical notes"},"styles":{"color":"#15AFAC"},"label":"clinical notes","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n58">
+			<data key="d0">58</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="AI configuration" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="991" Y="612" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"hybrid vector database","properties":{"type":"Keyword","label":"AI configuration"},"styles":{"color":"#15AFAC"},"label":"AI configuration","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n59">
+			<data key="d0">59</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="artificial intelligence" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="79" Y="516" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"FHIR","properties":{"type":"Keyword","label":"artificial intelligence"},"styles":{"color":"#15AFAC"},"label":"artificial intelligence","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n60">
+			<data key="d0">60</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="tax evasion" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="355" Y="944" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"multi-country BO search tool","properties":{"type":"Keyword","label":"tax evasion"},"styles":{"color":"#15AFAC"},"label":"tax evasion","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n61">
+			<data key="d0">61</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Azerbaijani Laundromat" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="271" Y="0" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"money laundering","properties":{"type":"Keyword","label":"Azerbaijani Laundromat"},"styles":{"color":"#15AFAC"},"label":"Azerbaijani Laundromat","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n62">
+			<data key="d0">62</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="OpenCorporates API" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="96" Y="16" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"OpenSanctions","properties":{"type":"Keyword","label":"OpenCorporates API"},"styles":{"color":"#15AFAC"},"label":"OpenCorporates API","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n63">
+			<data key="d0">63</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="Scam Empire" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="527" Y="59" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"trafficking in persons","properties":{"type":"Keyword","label":"Scam Empire"},"styles":{"color":"#15AFAC"},"label":"Scam Empire","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n64">
+			<data key="d0">64</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="search code" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="821" Y="0" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"scam operation","properties":{"type":"Keyword","label":"search code"},"styles":{"color":"#15AFAC"},"label":"search code","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n65">
+			<data key="d0">65</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="AI algorithms" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="874" Y="616" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"EITI data","properties":{"type":"Keyword","label":"AI algorithms"},"styles":{"color":"#15AFAC"},"label":"AI algorithms","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n66">
+			<data key="d0">66</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="patents" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="403" Y="120" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"Effective Tax Rate (ETR)","properties":{"type":"Keyword","label":"patents"},"styles":{"color":"#15AFAC"},"label":"patents","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n67">
+			<data key="d0">67</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="real owners" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="0" Y="276" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"beneficial ownership","properties":{"type":"Keyword","label":"real owners"},"styles":{"color":"#15AFAC"},"label":"real owners","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n68">
+			<data key="d0">68</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="fraud detection" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="504" Y="248" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"identity fraud","properties":{"type":"Keyword","label":"fraud detection"},"styles":{"color":"#15AFAC"},"label":"fraud detection","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n69">
+			<data key="d0">69</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="connected data analytics" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="772" Y="380" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"graph technology","properties":{"type":"Keyword","label":"connected data analytics"},"styles":{"color":"#15AFAC"},"label":"connected data analytics","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n70">
+			<data key="d0">70</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="shareholder primacy" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="266" Y="415" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"network analytics","properties":{"type":"Keyword","label":"shareholder primacy"},"styles":{"color":"#15AFAC"},"label":"shareholder primacy","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n71">
+			<data key="d0">71</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="NEMDE" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="211" Y="944" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"grid enhancement","properties":{"type":"Keyword","label":"NEMDE"},"styles":{"color":"#15AFAC"},"label":"NEMDE","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n72">
+			<data key="d0">72</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="curtailment" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="773" Y="617" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"two-shifting","properties":{"type":"Keyword","label":"curtailment"},"styles":{"color":"#15AFAC"},"label":"curtailment","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n73">
+			<data key="d0">73</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Text="energy information" LayoutParameter="{y:GraphMLReference 1}">
+						<y:Label.Style>
+							<yjs:LabelStyle shape="ROUND_RECTANGLE" font="{y:GraphMLReference 2}" padding="4,2,4,2">
+								<yjs:LabelStyle.backgroundFill>
+									<yjs:CssFill cssString="rgba(255, 255, 255, 0.7)"/>
+								</yjs:LabelStyle.backgroundFill>
+								<yjs:LabelStyle.textFill>
+									<yjs:CssFill cssString="#000000"/>
+								</yjs:LabelStyle.textFill>
+							</yjs:LabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="5" Y="945" Width="55" Height="55"/>
+			</data>
+			<data key="d6">
+				<y:Json>{"id":"RTO/ISO expansion","properties":{"type":"Keyword","label":"energy information"},"styles":{"color":"#15AFAC"},"label":"energy information","scale_factor":1,"type":"#15AFAC","size":[55,55],"position":[0,0]}</y:Json>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle shape="ELLIPSE">
+					<yjs:ShapeNodeStyle.stroke>
+						<yjs:Stroke lineCap="SQUARE">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#052626"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:ShapeNodeStyle.stroke>
+					<yjs:ShapeNodeStyle.fill>
+						<yjs:CssFill cssString="#15AFAC"/>
+					</yjs:ShapeNodeStyle.fill>
+				</yjs:ShapeNodeStyle>
+			</data>
+			<port name="p0"/>
+		</node>
+		<edge id="e0" source="n0" target="n46" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://speakerdeck.com/gaelvaroquaux/open-source-software-how-to-live-long-and-go-far","end":"general tools","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e1" source="n3" target="n46" sourceport="p0" targetport="p1">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.latencyconf.io/sessions/pandas-should-go-extinct","end":"general tools","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e2" source="n27" target="n46" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://github.com/DAD-CDM/dad-cdm-tsc/blob/main/DAD-CDM-Key-Findings-202502.md","end":"general tools","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e3" source="n2" target="n47" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://github.com/jackboyla/GLiREL","end":"ai","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e4" source="n5" target="n48" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://cambridge-intelligence.com/mapweave/","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e5" source="n21" target="n48" sourceport="p0" targetport="p1">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/the-azerbaijani-laundromat/the-raw-data","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e6" source="n24" target="n48" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.unodc.org/unodc/en/data-and-analysis/tip-studies.html","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e7" source="n25" target="n48" sourceport="p0" targetport="p3">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.which.co.uk/news/article/scam-empire-inside-the-275m-fraud-call-centre-operations-aP3Kc4c9HWd7","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e8" source="n26" target="n48" sourceport="p0" targetport="p4">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/scam-empire/scam-operations-relied-on-third-party-marketing-companies-for-steady-stream-of-potential-victims","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e9" source="n34" target="n48" sourceport="p0" targetport="p5">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://ubm.se/publikationer/publikationer/2025-03-13-kunskapsrapport---avancerade-angrepp-mot-valfardssystemen","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e10" source="n36" target="n48" sourceport="p0" targetport="p6">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://graphaware.com/resources/streamlining-criminal-assets-confiscation/","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e11" source="n37" target="n48" sourceport="p0" targetport="p7">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://graphaware.com/law-enforcement/","end":"organized crime analysis","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e12" source="n12" target="n49" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://blog.kuzudb.com/post/unstructured-data-to-graph-baml-kuzu/","end":"healthcare data","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e13" source="n15" target="n49" sourceport="p0" targetport="p1">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://darrendevitt.com/all-fhir-concepts-can-be-explained-simply/","end":"healthcare data","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e14" source="n16" target="n49" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://medium.com/@samschifman/rag-on-fhir-with-knowledge-graphs-04d8e13ee96e","end":"healthcare data","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e15" source="n19" target="n50" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/cyprus-confidential/billionaire-roman-abramovichs-company-set-up-fake-superyacht-chartering-scheme-in-apparent-attempt-to-evade-millions-in-taxes","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e16" source="n20" target="n50" sourceport="p0" targetport="p1">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/the-azerbaijani-laundromat/the-contract-factory-inside-danske-bank-estonias-money-laundering-machine","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e17" source="n22" target="n50" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://discuss.opensanctions.org/","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e18" source="n23" target="n50" sourceport="p0" targetport="p3">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://blog.opencorporates.com/2025/02/13/getting-started-with-the-opencorporates-api/","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e19" source="n29" target="n50" sourceport="p0" targetport="p4">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.moodys.com/web/en/us/kyc/resources/insights/how-ai-is-enhancing-ubo-discovery-and-support-reporting-requirements-globally.html","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e20" source="n30" target="n50" sourceport="p0" targetport="p5">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://oecdstatistics.blog/2019/07/04/the-adima-database-on-multinational-enterprises/","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e21" source="n32" target="n50" sourceport="p0" targetport="p6">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.gao.gov/products/gao-25-107403","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e22" source="n35" target="n50" sourceport="p0" targetport="p7">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://senzing.com/daniel-silva-prudential-senzing-global-user-conference/","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e23" source="n38" target="n50" sourceport="p0" targetport="p8">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://graphaware.com/blog/aml-investigations-detecting-risk-transactions/","end":"financial crime technology","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e24" source="n39" target="n51" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5120765","end":"corporate governance","properties":{"type":"BELONGS_TO"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e25" source="n0" target="n52" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://speakerdeck.com/gaelvaroquaux/open-source-software-how-to-live-long-and-go-far","end":"open-source software","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e26" source="n2" target="n53" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://github.com/jackboyla/GLiREL","end":"relation extraction","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e27" source="n4" target="n54" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://orbae.adastra.eco/","end":"land conversion","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e28" source="n6" target="n55" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql","end":"SparQL Graph Widget","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e29" source="n9" target="n56" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://enterprise-knowledge.com/the-resource-description-framework-rdf/","end":"RDF","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e30" source="n11" target="n57" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://blog.kuzudb.com/post/kuzu-wasm-rag/","end":"Graph RAG","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e31" source="n13" target="n58" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://medium.com/@mcgeehan/building-a-hybrid-vector-search-database-with-arrow-and-duckdb-07ebc049bc1f","end":"hybrid vector database","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e32" source="n16" target="n59" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://medium.com/@samschifman/rag-on-fhir-with-knowledge-graphs-04d8e13ee96e","end":"FHIR","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e33" source="n15" target="n59" sourceport="p1" targetport="p1">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://darrendevitt.com/all-fhir-concepts-can-be-explained-simply/","end":"FHIR","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e34" source="n18" target="n60" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.openownership.org/en/blog/lessons-from-building-a-prototype-single-search-tool-for-beneficial-ownership-registers/","end":"multi-country BO search tool","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e35" source="n20" target="n61" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/the-azerbaijani-laundromat/the-contract-factory-inside-danske-bank-estonias-money-laundering-machine","end":"money laundering","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e36" source="n22" target="n62" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://discuss.opensanctions.org/","end":"OpenSanctions","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e37" source="n24" target="n63" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.unodc.org/unodc/en/data-and-analysis/tip-studies.html","end":"trafficking in persons","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e38" source="n26" target="n64" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.occrp.org/en/project/scam-empire/scam-operations-relied-on-third-party-marketing-companies-for-steady-stream-of-potential-victims","end":"scam operation","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e39" source="n28" target="n65" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://eiti.org/using-eiti-data","end":"EITI data","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e40" source="n30" target="n66" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://oecdstatistics.blog/2019/07/04/the-adima-database-on-multinational-enterprises/","end":"Effective Tax Rate (ETR)","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e41" source="n32" target="n67" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.gao.gov/products/gao-25-107403","end":"beneficial ownership","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e42" source="n34" target="n68" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://ubm.se/publikationer/publikationer/2025-03-13-kunskapsrapport---avancerade-angrepp-mot-valfardssystemen","end":"identity fraud","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e43" source="n36" target="n69" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://graphaware.com/resources/streamlining-criminal-assets-confiscation/","end":"graph technology","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e44" source="n38" target="n70" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://graphaware.com/blog/aml-investigations-detecting-risk-transactions/","end":"network analytics","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e45" source="n40" target="n71" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.powermag.com/software-hardware-innovation-all-needed-to-upgrade-the-power-grid/","end":"grid enhancement","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e46" source="n42" target="n72" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://www.abc.net.au/news/2024-10-13/australian-coal-plant-in-extraordinary-survival-experiment/104461504","end":"two-shifting","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+		<edge id="e47" source="n44" target="n73" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle smoothingLength="30" sourceArrow="{y:GraphMLReference 3}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke thickness="2">
+							<yjs:Stroke.fill>
+								<yjs:CssFill cssString="#15AFAC"/>
+							</yjs:Stroke.fill>
+						</yjs:Stroke>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow fill="BLACK" type="NONE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+			<data key="d6">
+				<y:Json>{"start":"https://blog.gridstatus.io/spp-expansion-west/","end":"RTO/ISO expansion","properties":{"type":"HAS_KEYWORD"},"thickness_factor":1,"directed":false,"styles":{"color":"#15AFAC"},"label":""}</y:Json>
+			</data>
+		</edge>
+	</graph>
+</graphml>
