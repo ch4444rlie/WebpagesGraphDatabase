@@ -1,18 +1,19 @@
 # Webpage Graph Database with Kùzu and yFiles
 
-This project creates a graph database using [Kùzu](https://kuzudb.com/) to store and analyze connections between webpages, with visualization powered by [yFiles](https://www.yworks.com/products/yfiles). It was developed to explore interconnected ideas and concepts across a curated set of webpages and to learn the capabilities of Kùzu graph databases.
+This project creates a graph database using [Kùzu](https://kuzudb.com/) to store and analyze connections between webpages, with interactive visualizations powered by [yFiles](https://www.yworks.com/products/yfiles). Developed to explore interconnected ideas across a curated set of webpages and to master the capabilities of Kùzu graph databases, this project serves as both a practical tool for discovering hidden relationships and an educational exercise in graph database design.
 
 ![image](https://github.com/user-attachments/assets/1c53a0d9-b26d-484a-b903-678864697fc0)
 
 
 ## Project Overview
 
-The goal is to:
-- **Discover Connections**: Identify shared keywords and categories across webpages to uncover related concepts and ideas.
-- **Learn Kùzu**: Experiment with Kùzu's graph database features, including schema creation, data ingestion, and querying.
-- **Visualize Relationships**: Use yFiles to create interactive graph visualizations of links, categories, and keywords.
+**Key Value Propositions**:
+- **Discover Hidden Connections**: Identifies latent relationships between webpages, such as links that share keywords despite belonging to different categories, facilitating deeper insights into content relationships.
+- **Scalable Foundation**: Provides a flexible graph schema that can scale to larger datasets with automated data ingestion, supporting applications in content analysis, recommendation systems, or knowledge discovery.
+- **Learning Kùzu**: Serves as a hands-on exploration of Kùzu’s schema creation, Cypher querying, and database management, offering a practical introduction to graph database workflows.
+- **Visual Insights**: Transforms complex relationships into clear, interactive visualizations, making it easier to communicate findings to technical and non-technical audiences.
 
-The pipeline fetches webpage content, cleans and categorizes it using an LLM (Mistral 7B via Ollama), stores the data in a Kùzu graph database, and visualizes interconnections.
+The pipeline fetches webpage content, processes it using an LLM (Mistral 7B via Ollama) for categorization and keyword extraction, stores the data in Kùzu, and visualizes interconnections with yFiles. 
 
 ## Features
 
