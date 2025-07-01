@@ -2,6 +2,9 @@
 
 This project creates a graph database using [Kùzu](https://kuzudb.com/) to store and analyze connections between webpages, with visualization powered by [yFiles](https://www.yworks.com/products/yfiles). It was developed to explore interconnected ideas and concepts across a curated set of webpages and to learn the capabilities of Kùzu graph databases.
 
+![image](https://github.com/user-attachments/assets/1c53a0d9-b26d-484a-b903-678864697fc0)
+
+
 ## Project Overview
 
 The goal is to:
