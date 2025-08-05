@@ -1,0 +1,9 @@
+flask==2.3.3
+kuzu==0.6.1
+pandas==2.2.2
+yfiles-jupyter-graphs==1.8.0
+requests==2.32.3
+beautifulsoup4==4.12.3
+ollama==0.3.3
+pydantic==2.9.2
+pypdfium2>=4.30.2  # Address yanked version warning
