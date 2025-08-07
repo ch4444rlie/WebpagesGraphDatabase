@@ -1,0 +1,17 @@
+[project]
+name = "graphplay"
+version = "0.1.0"
+description = "Web app for URL metadata storage and graph visualization"
+readme = "appreadme.md"
+requires-python = ">=3.9"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "flask>=3.1.1",
+    "kuzu>=0.10.0",
+    "nest-asyncio>=1.6.0",
+    "ollama>=0.4.8",
+    "pandas>=2.2.3",
+    "pydantic>=2.11.4",
+    "requests>=2.32.3",
+    "pyarrow>=20.0.0",
+]

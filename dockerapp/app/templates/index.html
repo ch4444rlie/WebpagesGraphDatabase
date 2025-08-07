@@ -1,90 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Brad's Webpage Graph Database</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <script src="https://unpkg.com/vis-network@latest/dist/vis-network.min.js"></script>
+    <title>Kùzu Webapp</title>
 </head>
 <body>
-    <h1>Brad's Webpage Graph Database</h1>
-    
-    <h2>Instructions</h2>
-    <p>
-        Enter a URL below, and the app will automatically fetch content and generate metadata (category, keywords, explanations) using Ollama running locally.
-        Ensure Ollama is installed and running at <code>http://localhost:11434</code> before adding links.
-        See <a href="https://ollama.com/" target="_blank">Ollama documentation</a> for setup instructions.
-    </p>
-
-    <h2>Add a New Link</h2>
-    <form id="linkForm">
-        <label>URL:</label><br>
-        <input type="text" id="url" placeholder="https://example.com" required><br>
+    <h1>Kùzu Graph Database</h1>
+    <h2>Add Link</h2>
+    <form method="POST" action="/add_link">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required>
         <button type="submit">Add Link</button>
     </form>
-
-    <h2>Existing Links</h2>
-    <table id="linksTable">
-        <thead><tr><th>URL</th><th>Title</th><th>Category</th><th>Keywords</th></tr></thead>
-        <tbody></tbody>
+    <h2>Links</h2>
+    <table border="1">
+        <tr><th>URL</th><th>Title</th><th>Category</th></tr>
+        {% for link in links %}
+        <tr>
+            <td>{{ link.url }}</td>
+            <td>{{ link.title }}</td>
+            <td>{{ link.category }}</td>
+        </tr>
+        {% endfor %}
     </table>
-
-    <h2>Graph Visualization</h2>
-    <div id="network" style="height: 600px; border: 1px solid black;"></div>
-
-    <script>
-        // Fetch and display links
-        fetch('/get_links')
-            .then(response => response.json())
-            .then(data => {
-                const tbody = document.querySelector('#linksTable tbody');
-                tbody.innerHTML = '';
-                data.forEach(link => {
-                    const row = `<tr><td>${link.URL}</td><td>${link.Title}</td><td>${link.Category}</td><td>${link.Keywords}</td></tr>`;
-                    tbody.innerHTML += row;
-                });
-            });
-
-        // Fetch and display graph
-        fetch('/get_graph')
-            .then(response => response.json())
-            .then(data => {
-                const nodes = new vis.DataSet(data.nodes.map(node => ({
-                    id: node.id,
-                    label: node.properties.label,
-                    shape: node.properties.type === 'Link' ? 'box' : node.properties.type === 'Category' ? 'ellipse' : 'triangle',
-                    color: node.properties.type === 'Link' ? '#1E90FF' : node.properties.type === 'Category' ? '#32CD32' : '#FF4500'
-                })));
-                const edges = new vis.DataSet(data.edges.map(edge => ({
-                    from: edge.start,
-                    to: edge.end,
-                    color: edge.properties.type === 'BELONGS_TO' ? '#FFD700' : '#9932CC'
-                })));
-                const container = document.getElementById('network');
-                const network = new vis.Network(container, { nodes, edges }, {
-                    layout: { hierarchical: false },
-                    physics: { enabled: true }
-                });
-            });
-
-        // Handle form submission
-        document.getElementById('linkForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const data = { url: document.getElementById('url').value };
-            fetch('/add_link', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => {
-                if (result.error) {
-                    alert('Error: ' + result.error);
-                } else {
-                    alert('Link added successfully! Metadata: ' + JSON.stringify(result.metadata));
-                    window.location.reload();
-                }
-            });
-        });
-    </script>
 </body>
 </html>
