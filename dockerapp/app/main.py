@@ -4,6 +4,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
+from ollama import Client
 
 app = Flask(__name__, template_folder='templates')
 
@@ -66,18 +67,29 @@ def add_link():
             title = soup.title.string.strip() if soup.title else url
         except requests.RequestException as e:
             print(f"Failed to fetch title for {url}: {e}")
-            title = url  # Fallback to URL if fetching fails
-        # Insert link and connect to default category
-        # Use parameter binding to prevent SQL injection
+            title = url
+        # Predict category with Ollama
+        try:
+            client = Client(host='http://host.docker.internal:11434')
+            prompt = f"Given the webpage title '{title}', suggest a single category (e.g., Database, News, Blog, E-commerce)."
+            response = client.chat(model='mistral:7b-instruct-v0.3-q4_0', messages=[{'role': 'user', 'content': prompt}])
+            category = response['message']['content'].strip() or 'Uncategorized'
+            # Ensure category exists
+            conn.execute("MERGE (c:Category {name: $name})", {"name": category})
+        except Exception as e:
+            print(f"Failed to predict category for {title}: {e}")
+            category = 'Uncategorized'
+            conn.execute("MERGE (c:Category {name: 'Uncategorized'})")
+        # Insert link and connect to category
         conn.execute("CREATE (:Link {url: $url, title: $title})", {"url": url, "title": title})
         conn.execute(
             """
-            MATCH (l:Link {url: $url}), (c:Category {name: 'Database'})
+            MATCH (l:Link {url: $url}), (c:Category {name: $name})
             CREATE (l)-[:BELONGS_TO]->(c)
             """,
-            {"url": url}
+            {"url": url, "name": category}
         )
-        print(f"Added link: {url}, Title: {title}")
+        print(f"Added link: {url}, Title: {title}, Category: {category}")
         return redirect(url_for("index"))
     except Exception as e:
         print(f"Error adding link: {e}")
