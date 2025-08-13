@@ -10,6 +10,7 @@ import io
 import csv
 
 app = Flask(__name__, template_folder='templates')
+app.secret_key = 'your_secret_key'  # Replace with a secure random string in production
 
 # Initialize Kùzu database
 db_path = "/app/db/kuzu.db"
@@ -36,7 +37,44 @@ except Exception as e:
     print(f"Error initializing Kùzu: {e}")
     raise
 
-# Define clean_content_with_ollama function (for other routes)
+# Combine root and index routes to avoid endpoint conflict
+@app.route("/", methods=["GET"])
+@app.route("/index", methods=["GET"])
+def index():
+    try:
+        result = conn.execute("MATCH (l:Link)-[:BELONGS_TO]->(c:Category) RETURN l.url, l.title, c.name, l.raw_category, l.suggested_category, l.raw_content, l.cleaned_content, l.keywords, l.category_explanation, l.keyword_explanation")
+        links = [{
+            "url": row[0],
+            "title": row[1],
+            "category": row[2],
+            "raw_category": row[3],
+            "suggested_category": row[4] if row[4] else 'None',
+            "raw_content": row[5] if row[5] else 'Failed to fetch content',
+            "cleaned_content": row[6] if row[6] else 'Failed to clean content',
+            "keywords": row[7] if row[7] else 'none',
+            "category_explanation": row[8] if row[8] else 'None',
+            "keyword_explanation": row[9] if row[9] else 'None'
+        } for row in result]
+        print("Fetched links for index route")
+        result = conn.execute("""
+            MATCH (l1:Link)-[:HAS_KEYWORD]->(k:Keyword)<-[:HAS_KEYWORD]-(l2:Link), 
+                  (l1)-[:BELONGS_TO]->(c1:Category), (l2)-[:BELONGS_TO]->(c2:Category)
+            WHERE l1.url <> l2.url AND c1.name <> c2.name
+            RETURN l1.url, l2.url, k.name, c1.name, c2.name
+        """)
+        interconnections = [{
+            "link1": row[0],
+            "link2": row[1],
+            "keyword": row[2],
+            "category1": row[3],
+            "category2": row[4]
+        } for row in result]
+        return render_template("index.html", links=links, interconnections=interconnections)
+    except Exception as e:
+        print(f"Error fetching links: {e}")
+        return f"Error: {str(e)}", 500
+
+# Other routes (unchanged from previous response)
 def clean_content_with_ollama(content, ollama_host):
     if not content or len(content.strip()) < 100:
         return ""
@@ -47,7 +85,7 @@ def clean_content_with_ollama(content, ollama_host):
         return response['message']['content'].strip()[:500]
     except Exception as e:
         print(f"Failed to clean content with Ollama: {e}")
-        return content[:500]  # Fallback to raw content
+        return content[:500]
 
 def parse_category_and_keywords(response):
     categories = [
@@ -62,16 +100,13 @@ def parse_category_and_keywords(response):
     keywords = ['none']
     if not response:
         return category, suggested_category, keywords
-    # Extract suggested category
     match = re.search(r'Category:\s*([A-Za-z\s/]+)(?:\s*Keywords:|$)', response)
     if match:
         suggested_category = match.group(1).strip()
-    # Map to fixed category
     for cat in categories:
         if cat.lower() == suggested_category.lower() or cat.lower() in response.lower():
             category = cat
             break
-    # Extract keywords
     match = re.search(r'Keywords:\s*([^.]+)', response)
     if match:
         keyword_str = match.group(1).strip()
@@ -101,7 +136,6 @@ def preload_metadata_csv():
                     continue
                 if not url.startswith(('http://', 'https://')):
                     url = 'https://' + url
-                # Normalize URL
                 parsed_url = urllib.parse.urlparse(url)
                 normalized_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}".rstrip('/')
                 url = urllib.parse.quote(normalized_url, safe=':/?=&')
@@ -111,13 +145,12 @@ def preload_metadata_csv():
                     continue
                 title = row['title'].strip() if row['title'] else url
                 raw_content = row['content'][:5000].strip() if row['content'] else ""
-                cleaned_content = raw_content[:500]  # Use raw content directly, no Ollama
+                cleaned_content = raw_content[:500]
                 raw_category = row['category'].strip() if row['category'] else 'Uncategorized'
                 suggested_category = raw_category
                 category_explanation = row['category_explanation'].strip() if row['category_explanation'] else 'None'
                 keyword_explanation = row['keyword_explanation'].strip() if row['keyword_explanation'] else 'None'
                 keywords = [k.strip() for k in row['keyword'].split(',') if k.strip()][:3] if row['keyword'] else ['none']
-                # Map category to fixed list
                 category, _, _ = parse_category_and_keywords(f"Category: {raw_category}")
                 keywords_str = ', '.join(keywords) if keywords and keywords != ['none'] else 'none'
                 conn.execute(
@@ -161,10 +194,8 @@ def preload_metadata_csv():
 @app.route("/upload_csv", methods=["POST"])
 def upload_csv():
     try:
-        # Log initial database state
         result = conn.execute("MATCH (l:Link) RETURN COUNT(l) AS cnt")
         print(f"Total links before CSV upload: {result.get_next()[0]}")
-        
         if 'file' not in request.files:
             flash("No file uploaded")
             return redirect(url_for("index"))
@@ -182,11 +213,9 @@ def upload_csv():
         required_fields = ['url']
         metadata_fields = ['url', 'title', 'content', 'category', 'keyword', 'category_explanation', 'keyword_explanation']
         is_metadata_csv = all(field in csv_reader.fieldnames for field in metadata_fields)
-        
         if not all(field in csv_reader.fieldnames for field in required_fields):
             flash("CSV must contain a 'url' column")
             return redirect(url_for("index"))
-        
         processed = 0
         skipped = 0
         for row in csv_reader:
@@ -199,7 +228,6 @@ def upload_csv():
                 continue
             if not url.startswith(('http://', 'https://')):
                 url = 'https://' + url
-            # Normalize URL
             parsed_url = urllib.parse.urlparse(url)
             normalized_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}".rstrip('/')
             url = urllib.parse.quote(normalized_url, safe=':/?=&')
@@ -210,20 +238,17 @@ def upload_csv():
                 continue
             try:
                 if is_metadata_csv:
-                    # Direct insertion for links_with_metadata.csv
                     title = row['title'].strip() if row['title'] else url
                     raw_content = row['content'][:5000].strip() if row['content'] else ""
-                    cleaned_content = raw_content[:500]  # Use raw content directly, no Ollama
+                    cleaned_content = raw_content[:500]
                     raw_category = row['category'].strip() if row['category'] else 'Uncategorized'
                     suggested_category = raw_category
                     category_explanation = row['category_explanation'].strip() if row['category_explanation'] else 'None'
                     keyword_explanation = row['keyword_explanation'].strip() if row['keyword_explanation'] else 'None'
                     keywords = [k.strip() for k in row['keyword'].split(',') if k.strip()][:3] if row['keyword'] else ['none']
-                    # Map category to fixed list
                     category, _, _ = parse_category_and_keywords(f"Category: {raw_category}")
                     keywords_str = ', '.join(keywords) if keywords and keywords != ['none'] else 'none'
                 else:
-                    # Existing logic for non-metadata CSVs (fetch content, use Ollama)
                     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
                     try:
                         response = requests.get(url, headers=headers, timeout=10)
@@ -297,7 +322,6 @@ def upload_csv():
                 flash(f"Error processing row {csv_reader.line_num} for URL {url}: {str(e)}")
                 skipped += 1
                 continue
-        # Log final database state
         result = conn.execute("MATCH (l:Link) RETURN COUNT(l) AS cnt")
         print(f"Total links after CSV upload: {result.get_next()[0]}")
         flash(f"Successfully processed {processed} links, skipped {skipped} duplicates or invalid entries")
@@ -313,11 +337,9 @@ def add_link():
         url = request.form["url"]
         if not url.startswith(('http://', 'https://')):
             url = 'https://' + url
-        # Normalize URL
         parsed_url = urllib.parse.urlparse(url)
         normalized_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}".rstrip('/')
         url = urllib.parse.quote(normalized_url, safe=':/?=&')
-        # Check for duplicates
         result = conn.execute("MATCH (l:Link {url: $url}) RETURN l.url", {"url": url})
         if result.has_next():
             print(f"Skipping duplicate link: {url}")
@@ -385,72 +407,64 @@ def add_link():
         flash(f"Error adding link: {str(e)}")
         return redirect(url_for("index"))
 
-@app.route("/index", methods=["GET"])
-def index():
-    try:
-        result = conn.execute("MATCH (l:Link)-[:BELONGS_TO]->(c:Category) RETURN l.url, l.title, c.name, l.raw_category, l.suggested_category, l.raw_content, l.cleaned_content, l.keywords, l.category_explanation, l.keyword_explanation")
-        links = [{
-            "url": row[0],
-            "title": row[1],
-            "category": row[2],
-            "raw_category": row[3],
-            "suggested_category": row[4] if row[4] else 'None',
-            "raw_content": row[5] if row[5] else 'Failed to fetch content',
-            "cleaned_content": row[6] if row[6] else 'Failed to clean content',
-            "keywords": row[7] if row[7] else 'none',
-            "category_explanation": row[8] if row[8] else 'None',
-            "keyword_explanation": row[9] if row[9] else 'None'
-        } for row in result]
-        print("Fetched links for index route")
-        result = conn.execute("""
-            MATCH (l1:Link)-[:HAS_KEYWORD]->(k:Keyword)<-[:HAS_KEYWORD]-(l2:Link), 
-                  (l1)-[:BELONGS_TO]->(c1:Category), (l2)-[:BELONGS_TO]->(c2:Category)
-            WHERE l1.url <> l2.url AND c1.name <> c2.name
-            RETURN l1.url, l2.url, k.name, c1.name, c2.name
-        """)
-        interconnections = [{
-            "link1": row[0],
-            "link2": row[1],
-            "keyword": row[2],
-            "category1": row[3],
-            "category2": row[4]
-        } for row in result]
-        return render_template("index.html", links=links, interconnections=interconnections)
-    except Exception as e:
-        print(f"Error fetching links: {e}")
-        return f"Error: {str(e)}", 500
-
 @app.route("/graph_data", methods=["GET"])
 def graph_data():
     try:
         nodes = []
         result = conn.execute("MATCH (l:Link) WHERE l.title IS NOT NULL RETURN l.url, l.title")
+        link_count = 0
         for row in result:
-            nodes.append({"id": row[0], "label": row[1], "group": "Link"})
+            nodes.append({"id": f"Link:{row[0]}", "label": row[1], "group": "Link"})
+            link_count += 1
+        print(f"Fetched {link_count} links for graph")
+        
         result = conn.execute("MATCH (c:Category) WHERE c.name IS NOT NULL RETURN c.name")
+        category_count = 0
         for row in result:
-            nodes.append({"id": row[0], "label": row[0], "group": "Category"})
+            nodes.append({"id": f"Category:{row[0]}", "label": row[0], "group": "Category"})
+            category_count += 1
+        print(f"Fetched {category_count} categories for graph")
+        
         result = conn.execute("MATCH (k:Keyword) WHERE k.name IS NOT NULL RETURN k.name")
+        keyword_count = 0
         for row in result:
-            nodes.append({"id": row[0], "label": row[0], "group": "Keyword"})
+            nodes.append({"id": f"Keyword:{row[0]}", "label": row[0], "group": "Keyword"})
+            keyword_count += 1
+        print(f"Fetched {keyword_count} keywords for graph")
+        
         edges = []
         result = conn.execute("MATCH (l:Link)-[:BELONGS_TO]->(c:Category) WHERE l.url IS NOT NULL AND c.name IS NOT NULL RETURN l.url, c.name")
+        belongs_to_count = 0
         for row in result:
-            edges.append({"from": row[0], "to": row[1]})
+            edges.append({"from": f"Link:{row[0]}", "to": f"Category:{row[1]}"})
+            belongs_to_count += 1
+        print(f"Fetched {belongs_to_count} BELONGS_TO edges for graph")
+        
         result = conn.execute("MATCH (l:Link)-[:HAS_KEYWORD]->(k:Keyword) WHERE l.url IS NOT NULL AND k.name IS NOT NULL RETURN l.url, k.name")
+        has_keyword_count = 0
         for row in result:
-            edges.append({"from": row[0], "to": row[1]})
+            edges.append({"from": f"Link:{row[0]}", "to": f"Keyword:{row[1]}"})
+            has_keyword_count += 1
+        print(f"Fetched {has_keyword_count} HAS_KEYWORD edges for graph")
+        
+        # Log all nodes to check for duplicates
+        node_ids = [node['id'] for node in nodes]
+        print(f"Node IDs: {node_ids}")
+        if len(node_ids) != len(set(node_ids)):
+            print(f"Warning: Duplicate node IDs detected: {set([x for x in node_ids if node_ids.count(x) > 1])}")
+        
         print(f"Graph data: {len(nodes)} nodes, {len(edges)} edges")
         return jsonify({"nodes": nodes, "edges": edges})
     except Exception as e:
         print(f"Error fetching graph data: {e}")
         return jsonify({"nodes": [], "edges": [], "error": str(e)}), 200
 
+
+
 @app.route("/delete_link", methods=["POST"])
 def delete_link():
     try:
         url = request.form["url"]
-        # Delete the Link node and its relationships
         conn.execute("MATCH (l:Link {url: $url}) DETACH DELETE l", {"url": url})
         print(f"Deleted link: {url}")
         flash(f"Successfully deleted link: {url}")
@@ -462,5 +476,5 @@ def delete_link():
 
 if __name__ == "__main__":
     print("Starting Flask server")
-    preload_metadata_csv()  # Call preload after database initialization
+    preload_metadata_csv()
     app.run(host="0.0.0.0", port=5000, debug=False)

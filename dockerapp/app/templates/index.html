@@ -4,8 +4,13 @@
     <title>Kùzu Webapp</title>
     <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
-        #network { width: 100%; height: 400px; border: 1px solid lightgray; margin-top: 20px; }
         body { font-family: Arial, sans-serif; margin: 20px; }
+        #network { 
+            width: 100%; 
+            height: calc(100vh - 300px); 
+            border: 1px solid lightgray; 
+            margin-top: 20px; 
+        }
         table { border-collapse: collapse; width: 100%; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
         th { background-color: #f2f2f2; }
@@ -15,6 +20,17 @@
         .truncated { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
         .full-content { display: none; white-space: pre-wrap; }
         .expanded { display: block; }
+        .tab-container { margin-bottom: 20px; }
+        .tab { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            background-color: #f2f2f2; 
+            margin-right: 5px; 
+        }
+        .tab.active { background-color: #ddd; font-weight: bold; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
     </style>
 </head>
 <body>
@@ -42,87 +58,149 @@
         <input type="number" id="batch_size" name="batch_size" value="5" min="1">
         <button type="submit">Upload CSV</button>
     </form>
-    <h2>Links</h2>
-    <table>
-        <tr>
-            <th>URL</th><th>Title</th><th>Category</th><th>Raw Category</th><th>Suggested Category</th>
-            <th>Extracted Keywords</th><th>Category Explanation</th><th>Keyword Explanation</th><th>Raw Content</th><th>Action</th>
-        </tr>
-        {% for link in links %}
-        <tr class="row" data-url="{{ link.url }}">
-            <td class="truncated" title="{{ link.url }}">{{ link.url | truncate(50, True) }}</td>
-            <td class="truncated" title="{{ link.title }}">{{ link.title | truncate(50, True) }}</td>
-            <td>{{ link.category }}</td>
-            <td>{{ link.raw_category }}</td>
-            <td>{{ link.suggested_category }}</td>
-            <td>{{ link.keywords }}</td>
-            <td>
-                <span class="truncated" title="{{ link.category_explanation }}">{{ link.category_explanation | truncate(50, True) }}</span>
-                <div class="full-content">{{ link.category_explanation }}</div>
-            </td>
-            <td>
-                <span class="truncated" title="{{ link.keyword_explanation }}">{{ link.keyword_explanation | truncate(50, True) }}</span>
-                <div class="full-content">{{ link.keyword_explanation }}</div>
-            </td>
-            <td>
-                <span class="truncated" title="{{ link.raw_content }}">{{ link.raw_content | truncate(50, True) }}</span>
-                <div class="full-content">{{ link.raw_content }}</div>
-            </td>
-            <td>
-                <form method="POST" action="/delete_link">
-                    <input type="hidden" name="url" value="{{ link.url }}">
-                    <button type="submit" class="delete-btn">Delete</button>
-                </form>
-            </td>
-        </tr>
-        {% endfor %}
-    </table>
-    <h2>Graph Visualization</h2>
-    <div id="network"></div>
-    <h2>Interconnected Links by Shared Keywords</h2>
-    <table>
-        <tr><th>Link 1</th><th>Link 2</th><th>Shared Keyword</th><th>Category 1</th><th>Category 2</th></tr>
-        {% for conn in interconnections %}
-        <tr>
-            <td>{{ conn.link1 }}</td>
-            <td>{{ conn.link2 }}</td>
-            <td>{{ conn.keyword }}</td>
-            <td>{{ conn.category1 }}</td>
-            <td>{{ conn.category2 }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="tab-container">
+        <div class="tab" onclick="openTab('links')">Links</div>
+        <div class="tab" onclick="openTab('interconnections')">Interconnected Links</div>
+        <div class="tab" onclick="openTab('graph')">Graph Visualization</div>
+    </div>
+    <div id="links" class="tab-content">
+        <h2>Links</h2>
+        <table>
+            <tr>
+                <th>Action</th><th>URL</th><th>Title</th><th>Category</th><th>Raw Category</th><th>Suggested Category</th>
+                <th>Extracted Keywords</th><th>Category Explanation</th><th>Keyword Explanation</th><th>Raw Content</th>
+            </tr>
+            {% for link in links %}
+            <tr class="row" data-url="{{ link.url }}">
+                <td>
+                    <form method="POST" action="/delete_link">
+                        <input type="hidden" name="url" value="{{ link.url }}">
+                        <button type="submit" class="delete-btn">Delete</button>
+                    </form>
+                </td>
+                <td class="truncated" title="{{ link.url }}">{{ link.url | truncate(50, True) }}</td>
+                <td class="truncated" title="{{ link.title }}">{{ link.title | truncate(50, True) }}</td>
+                <td>{{ link.category }}</td>
+                <td>{{ link.raw_category }}</td>
+                <td>{{ link.suggested_category }}</td>
+                <td>{{ link.keywords }}</td>
+                <td>
+                    <span class="truncated" title="{{ link.category_explanation }}">{{ link.category_explanation | truncate(50, True) }}</span>
+                    <div class="full-content">{{ link.category_explanation }}</div>
+                </td>
+                <td>
+                    <span class="truncated" title="{{ link.keyword_explanation }}">{{ link.keyword_explanation | truncate(50, True) }}</span>
+                    <div class="full-content">{{ link.keyword_explanation }}</div>
+                </td>
+                <td>
+                    <span class="truncated" title="{{ link.raw_content }}">{{ link.raw_content | truncate(50, True) }}</span>
+                    <div class="full-content">{{ link.raw_content }}</div>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div id="interconnections" class="tab-content">
+        <h2>Interconnected Links by Shared Keywords</h2>
+        <table>
+            <tr><th>Link 1</th><th>Link 2</th><th>Shared Keyword</th><th>Category 1</th><th>Category 2</th></tr>
+            {% for conn in interconnections %}
+            <tr>
+                <td>{{ conn.link1 }}</td>
+                <td>{{ conn.link2 }}</td>
+                <td>{{ conn.keyword }}</td>
+                <td>{{ conn.category1 }}</td>
+                <td>{{ conn.category2 }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div id="graph" class="tab-content">
+        <h2>Graph Visualization</h2>
+        <div id="network"></div>
+        <div id="graph-error" style="color: red;"></div>
+    </div>
     <script>
-        // Fetch graph data for visualization
-        fetch('/graph_data')
-            .then(response => response.json())
-            .catch(error => console.error('Error fetching graph data:', error))
-            .then(data => {
-                if (data.error) {
-                    console.error('Graph data error:', data.error);
-                    document.getElementById('network').innerHTML = 'Graph failed to load: ' + data.error;
-                    return;
-                }
-                const nodes = new vis.DataSet(data.nodes);
-                const edges = new vis.DataSet(data.edges);
-                const container = document.getElementById('network');
-                const graphData = { nodes: nodes, edges: edges };
-                const options = {
-                    nodes: {
-                        shape: 'dot',
-                        size: 20,
-                        font: { size: 14 },
-                        color: { background: { Link: '#97C2FC', Category: '#FF7F7F', Keyword: '#7FFF7F' } }
-                    },
-                    edges: { arrows: 'to', color: '#000000' }
-                };
-                new vis.Network(container, graphData, options);
+        function openTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
             });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab[onclick="openTab('${tabId}')"]`).classList.add('active');
+            if (tabId === 'graph') {
+                loadGraph();
+            }
+        }
+
+        function loadGraph() {
+            const container = document.getElementById('network');
+            const errorDiv = document.getElementById('graph-error');
+            errorDiv.innerHTML = '';
+            fetch('/graph_data')
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.error) {
+                        console.error('Graph data error:', data.error);
+                        errorDiv.innerHTML = 'Graph failed to load: ' + data.error;
+                        return;
+                    }
+                    if (!data.nodes || !data.edges) {
+                        errorDiv.innerHTML = 'Graph failed to load: No nodes or edges returned';
+                        return;
+                    }
+                    const nodes = new vis.DataSet(data.nodes.map(node => ({
+                        ...node,
+                        size: Math.max(20, 20 + (node.label.length / 10) * 5),
+                        font: { multi: 'html', size: 14 },
+                        label: `<b>${node.label.replace(/(.{20})/g, '$1\n')}</b>`
+                    })));
+                    const edges = new vis.DataSet(data.edges);
+                    const graphData = { nodes: nodes, edges: edges };
+                    const options = {
+                        nodes: {
+                            shape: 'circle',
+                            scaling: {
+                                min: 20,
+                                max: 50,
+                                label: { enabled: true }
+                            },
+                            font: {
+                                size: 14,
+                                align: 'center',
+                                multi: 'html',
+                                strokeWidth: 0
+                            },
+                            color: {
+                                background: { Link: '#97C2FC', Category: '#FF7F7F', Keyword: '#7FFF7F' },
+                                border: '#000000'
+                            },
+                            margin: 10
+                        },
+                        edges: { arrows: 'to', color: '#000000' },
+                        physics: { enabled: true }
+                    };
+                    new vis.Network(container, graphData, options);
+                    console.log('Graph loaded successfully');
+                })
+                .catch(error => {
+                    console.error('Error fetching graph data:', error);
+                    errorDiv.innerHTML = 'Graph failed to load: ' + error.message;
+                });
+        }
+
+        // Initialize first tab (Links) as active
+        openTab('links');
 
         // Toggle full content on row click
         document.querySelectorAll('.row').forEach(row => {
             row.addEventListener('click', (e) => {
-                if (e.target.classList.contains('delete-btn')) return; // Ignore clicks on delete button
+                if (e.target.classList.contains('delete-btn')) return;
                 const cells = row.querySelectorAll('.truncated, .full-content');
                 cells.forEach(cell => {
                     const truncated = cell.classList.contains('truncated') ? cell : cell.querySelector('.truncated');
