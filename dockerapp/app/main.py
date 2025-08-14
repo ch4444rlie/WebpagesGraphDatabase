@@ -37,44 +37,7 @@ except Exception as e:
     print(f"Error initializing Kùzu: {e}")
     raise
 
-# Combine root and index routes to avoid endpoint conflict
-@app.route("/", methods=["GET"])
-@app.route("/index", methods=["GET"])
-def index():
-    try:
-        result = conn.execute("MATCH (l:Link)-[:BELONGS_TO]->(c:Category) RETURN l.url, l.title, c.name, l.raw_category, l.suggested_category, l.raw_content, l.cleaned_content, l.keywords, l.category_explanation, l.keyword_explanation")
-        links = [{
-            "url": row[0],
-            "title": row[1],
-            "category": row[2],
-            "raw_category": row[3],
-            "suggested_category": row[4] if row[4] else 'None',
-            "raw_content": row[5] if row[5] else 'Failed to fetch content',
-            "cleaned_content": row[6] if row[6] else 'Failed to clean content',
-            "keywords": row[7] if row[7] else 'none',
-            "category_explanation": row[8] if row[8] else 'None',
-            "keyword_explanation": row[9] if row[9] else 'None'
-        } for row in result]
-        print("Fetched links for index route")
-        result = conn.execute("""
-            MATCH (l1:Link)-[:HAS_KEYWORD]->(k:Keyword)<-[:HAS_KEYWORD]-(l2:Link), 
-                  (l1)-[:BELONGS_TO]->(c1:Category), (l2)-[:BELONGS_TO]->(c2:Category)
-            WHERE l1.url <> l2.url AND c1.name <> c2.name
-            RETURN l1.url, l2.url, k.name, c1.name, c2.name
-        """)
-        interconnections = [{
-            "link1": row[0],
-            "link2": row[1],
-            "keyword": row[2],
-            "category1": row[3],
-            "category2": row[4]
-        } for row in result]
-        return render_template("index.html", links=links, interconnections=interconnections)
-    except Exception as e:
-        print(f"Error fetching links: {e}")
-        return f"Error: {str(e)}", 500
-
-# Other routes (unchanged from previous response)
+# Helper functions
 def clean_content_with_ollama(content, ollama_host):
     if not content or len(content.strip()) < 100:
         return ""
@@ -190,6 +153,66 @@ def preload_metadata_csv():
         print(f"Error preloading links_with_metadata.csv: {e}")
         flash(f"Error preloading CSV: {str(e)}")
         return 0
+
+def save_to_csv():
+    csv_path = "/app/links_with_metadata.csv"
+    try:
+        result = conn.execute("MATCH (l:Link) RETURN l.url, l.title, l.raw_content, l.raw_category, l.keywords, l.category_explanation, l.keyword_explanation")
+        links = [{
+            "url": row[0],
+            "title": row[1] if row[1] else '',
+            "content": row[2] if row[2] else '',
+            "category": row[3] if row[3] else '',
+            "keyword": row[4] if row[4] else '',
+            "category_explanation": row[5] if row[5] else '',
+            "keyword_explanation": row[6] if row[6] else ''
+        } for row in result]
+        with open(csv_path, 'w', encoding='utf-8', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=['url', 'title', 'content', 'category', 'keyword', 'category_explanation', 'keyword_explanation'])
+            writer.writeheader()
+            for link in links:
+                writer.writerow(link)
+        print(f"Saved {len(links)} links to {csv_path}")
+    except Exception as e:
+        print(f"Error saving to CSV: {e}")
+        flash(f"Error saving to CSV: {str(e)}")
+
+# Routes
+@app.route("/", methods=["GET"])
+@app.route("/index", methods=["GET"])
+def index():
+    try:
+        result = conn.execute("MATCH (l:Link)-[:BELONGS_TO]->(c:Category) RETURN l.url, l.title, c.name, l.raw_category, l.suggested_category, l.raw_content, l.cleaned_content, l.keywords, l.category_explanation, l.keyword_explanation")
+        links = [{
+            "url": row[0],
+            "title": row[1],
+            "category": row[2],
+            "raw_category": row[3],
+            "suggested_category": row[4] if row[4] else 'None',
+            "raw_content": row[5] if row[5] else 'Failed to fetch content',
+            "cleaned_content": row[6] if row[6] else 'Failed to clean content',
+            "keywords": row[7] if row[7] else 'none',
+            "category_explanation": row[8] if row[8] else 'None',
+            "keyword_explanation": row[9] if row[9] else 'None'
+        } for row in result]
+        print("Fetched links for index route")
+        result = conn.execute("""
+            MATCH (l1:Link)-[:HAS_KEYWORD]->(k:Keyword)<-[:HAS_KEYWORD]-(l2:Link), 
+                  (l1)-[:BELONGS_TO]->(c1:Category), (l2)-[:BELONGS_TO]->(c2:Category)
+            WHERE l1.url <> l2.url AND c1.name <> c2.name
+            RETURN l1.url, l2.url, k.name, c1.name, c2.name
+        """)
+        interconnections = [{
+            "link1": row[0],
+            "link2": row[1],
+            "keyword": row[2],
+            "category1": row[3],
+            "category2": row[4]
+        } for row in result]
+        return render_template("index.html", links=links, interconnections=interconnections)
+    except Exception as e:
+        print(f"Error fetching links: {e}")
+        return f"Error: {str(e)}", 500
 
 @app.route("/upload_csv", methods=["POST"])
 def upload_csv():
@@ -324,6 +347,7 @@ def upload_csv():
                 continue
         result = conn.execute("MATCH (l:Link) RETURN COUNT(l) AS cnt")
         print(f"Total links after CSV upload: {result.get_next()[0]}")
+        save_to_csv()  # Save to CSV after uploading
         flash(f"Successfully processed {processed} links, skipped {skipped} duplicates or invalid entries")
         return redirect(url_for("index"))
     except Exception as e:
@@ -400,6 +424,7 @@ def add_link():
         )
         conn.execute("MATCH (l:Link {url: $url}), (c:Category {name: $name}) MERGE (l)-[:BELONGS_TO]->(c)", {"url": url, "name": category})
         print(f"Added link: {url}, Title: {title}, Category: {category}, Suggested Category: {suggested_category}, Keywords: {keywords}")
+        save_to_csv()  # Save to CSV after adding link
         flash(f"Successfully added link: {url}")
         return redirect(url_for("index"))
     except Exception as e:
@@ -447,7 +472,6 @@ def graph_data():
             has_keyword_count += 1
         print(f"Fetched {has_keyword_count} HAS_KEYWORD edges for graph")
         
-        # Log all nodes to check for duplicates
         node_ids = [node['id'] for node in nodes]
         print(f"Node IDs: {node_ids}")
         if len(node_ids) != len(set(node_ids)):
@@ -459,20 +483,23 @@ def graph_data():
         print(f"Error fetching graph data: {e}")
         return jsonify({"nodes": [], "edges": [], "error": str(e)}), 200
 
-
-
 @app.route("/delete_link", methods=["POST"])
 def delete_link():
     try:
         url = request.form["url"]
         conn.execute("MATCH (l:Link {url: $url}) DETACH DELETE l", {"url": url})
         print(f"Deleted link: {url}")
+        save_to_csv()  # Save to CSV after deleting link
         flash(f"Successfully deleted link: {url}")
         return redirect(url_for("index"))
     except Exception as e:
         print(f"Error deleting link: {e}")
         flash(f"Error deleting link: {str(e)}")
         return redirect(url_for("index"))
+
+@app.route("/instructions", methods=["GET"])
+def instructions():
+    return render_template("instructions.html")
 
 if __name__ == "__main__":
     print("Starting Flask server")

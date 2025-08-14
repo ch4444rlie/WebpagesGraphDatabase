@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kùzu Webapp Instructions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { margin-bottom: 10px; }
+        p, li { line-height: 1.5; }
+        a { color: blue; text-decoration: underline; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Kùzu Webapp Instructions</h1>
+    <p><a href="{{ url_for('index') }}">Back to Main Page</a></p>
+    <h2>User Guide</h2>
+    <p>The Kùzu webapp helps you explore connections between articles by automating content analysis and visualizing relationships, saving time and sparking new research ideas. Follow these steps to use the app effectively:</p>
+    <ol>
+        <li><strong>Access the App</strong>: Open <a href="http://localhost:5000/">http://localhost:5000/</a> in your browser after starting the app with Docker.</li>
+        <li><strong>Add Links</strong>: Use the <strong>Add Link</strong> form to enter a URL (e.g., <code>https://kuzudb.com</code>). The app fetches the webpage, extracts content, and uses an LLM to assign a category (e.g., "Database") and up to three keywords (e.g., "graph database"). New links appear in the <strong>Links</strong> tab and are saved automatically.</li>
+        <li><strong>Upload Multiple Links</strong>: Use the <strong>Upload CSV</strong> form to add multiple links at once. The CSV must include a <code>url</code> column. For pre-analyzed links, include <code>title</code>, <code>content</code>, <code>category</code>, <code>keyword</code>, <code>category_explanation</code>, and <code>keyword_explanation</code> columns (see <code>links_with_metadata.csv</code> for format). Set a batch size (e.g., 5) to limit processing for testing. Uploaded links are saved automatically.</li>
+        <li><strong>View and Explore</strong>:
+            <ul>
+                <li><strong>Links Tab</strong>: Shows a table of all links with URL, title, category, keywords, and content. Click a row (except the Delete button) to toggle between truncated and full content for explanations and raw content.</li>
+                <li><strong>Interconnected Links Tab</strong>: Lists pairs of links sharing keywords, along with their categories, to highlight conceptual connections.</li>
+                <li><strong>Graph Visualization Tab</strong>: Displays a graph of links, categories, and keywords. Nodes are sized by label length, with text wrapped for readability. Edges show relationships (link-to-category, link-to-keyword).</li>
+            </ul>
+        </li>
+        <li><strong>Delete Links</strong>: In the <strong>Links</strong> tab, click the <strong>Delete</strong> button (leftmost column) to remove a link. Deletions are saved automatically.</li>
+        <li><strong>Saving Progress</strong>: All changes (adding or deleting links) are saved to <code>/app/links_with_metadata.csv</code> automatically. The database (<code>/app/db/kuzu.db</code>) persists across restarts due to Docker volume mounting. <strong>Important</strong>: Do not delete or modify these files manually, as this could cause data loss. If you need to reset, stop the Docker container, remove these files, and restart to reinitialize with sample data.</li>
+        <li><strong>Troubleshooting</strong>:
+            <ul>
+                <li><strong>Errors</strong>: Check red error messages (e.g., under forms or in the Graph tab) for issues like failed webpage fetches or LLM errors.</li>
+                <li><strong>Graph Issues</strong>: If the graph doesn’t load, ensure the <strong>Graph Visualization</strong> tab is active and check the browser console (F12) for errors.</li>
+                <li><strong>Lost Data</strong>: If links disappear, verify <code>/app/links_with_metadata.csv</code> exists and is readable. Restart the app to reload data.</li>
+                <li><strong>Contact Support</strong>: If issues persist, note error messages and contact the administrator with Docker logs (<code>docker logs &lt;container_id&gt;</code>).</li>
+            </ul>
+        </li>
+        <li><strong>Tips for Research</strong>:
+            <ul>
+                <li>Use the <strong>Interconnected Links</strong> tab to find articles with shared keywords across different categories, which may suggest interdisciplinary ideas.</li>
+                <li>Explore the <strong>Graph Visualization</strong> to visually identify clusters of related articles.</li>
+                <li>Review <strong>category_explanation</strong> and <strong>keyword_explanation</strong> in the Links tab for LLM-generated insights.</li>
+            </ul>
+        </li>
+    </ol>
+    <p><a href="{{ url_for('index') }}">Back to Main Page</a></p>
+</body>
+</html>
